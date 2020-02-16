@@ -1,5 +1,10 @@
 /*    Fonts
 ======================*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+i {
+font-family: fontawesome !important;
+}
 
 @font-face {
 
@@ -46,8 +51,6 @@ h1,h2,h3,h4,h5,h6 {
 .header {
     background-color: #292929;
     border-bottom: 6px solid #1e1e1e;
-    margin-bottom: 80px;
-
 }
 
 .header__content {
@@ -119,15 +122,18 @@ h1,h2,h3,h4,h5,h6 {
 
 /*    Main
 ======================*/
+.main {
+    padding-top: 80px;
+    border: 1px solid #e1e0e0;
+}
 
 .main__content {
     max-width: 620px;
     width: 100%;
-    border: 1px solid #e1e0e0;
 }
 
 .main__section {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 }
 
 .main__img {
@@ -165,3 +171,67 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     padding: 8px 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    Navigation
+======================*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid #e1e0e0;
+    border-top: 0;
+}
+
+.navigation__item {
+    padding: 25px 25px;
+}
+
+.navigation__link {
+    font-size: 18px;
+    font-weight: 700;
+    color: #818181;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation__item--prev::before {
+    content: "";
+}
+
+.nav__item--prev {
+    font-style: normal;
+    margin-right: 10px;
+}
+
+.nav__item--next {
+    font-style: normal;
+    margin-left: 10px;
+}
+
+
