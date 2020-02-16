@@ -1,3 +1,6 @@
+/*    Fonts
+======================*/
+
 @font-face {
 
 font-family: "euroFurenceItalic";
@@ -7,6 +10,120 @@ font-style: normal;
 font-weight: normal;
 }
 
-h1 {
-	font-family: 'euroFurenceItalic';
+/*    Global
+======================*/
+body {
+    margin: 0;
+
+    color: #606060;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
 }
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+
+/*    Conteiner
+======================*/
+.conteiner {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+/*    Header
+======================*/
+.header {
+    background-color: #292929;
+    border-bottom: 6px solid #1e1e1e;
+
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
+
+/*    Logo
+======================*/
+.logo {
+    font-family: "euroFurenceItalic";
+    font-size: 40px;
+    color: #fff;
+}
+
+.logo__item {
+    color: #58c93a;
+}
+
+/*    Nav
+======================*/
+.nav {
+}
+
+.nav__list {
+    display: flex;
+    height: 100%;
+}
+
+.nav__item {
+    height: 100%;
+    display: block;
+}
+
+.nav__link {
+    padding: 44px 40px;
+
+    border-left: 1px solid #1e1e1e;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav__item:nth-child(4) .nav__link {
+    border-right: 1px solid #1e1e1e;
+}
+
+.nav__link:hover {
+    border-bottom: 6px solid #58c93a;
+    color: #58c93a;
+}
+
+.main__content {
+    max-width: 620px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
