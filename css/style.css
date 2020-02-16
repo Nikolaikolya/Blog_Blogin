@@ -112,6 +112,8 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+
+    transition: border-bottom .2s linear, color .1s ease;
 }
 
 .nav__item:nth-child(4) .nav__link {
@@ -172,14 +174,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main__btn {
+    padding: 8px 16px;
+
     text-decoration: none;
     color: #c2c1c1;
+
     border: 2px solid #c2c2c2;
     border-radius: 20px;
-    padding: 8px 16px;
+
+    transition: background .1s linear, color .1s linear;
 }
 
-
+.main__btn:hover {
+    background: #c2c2c2;
+    color: #fff;
+}
 
 /*    Aside
 ======================*/
@@ -224,7 +233,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .aside__item {
-
     list-style-type: none;
 }
 
@@ -233,7 +241,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 16px;
     line-height: 1.4;
 }
-
+.aside__links:hover {
+    text-decoration: none;
+}
 
 /*    Navigation
 ======================*/
@@ -256,6 +266,12 @@ h1,h2,h3,h4,h5,h6 {
     color: #818181;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.navigation__link:hover {
+    color: #4f4e4e;
 }
 
 .navigation__item--prev::before {
