@@ -91,6 +91,12 @@ h1,h2,h3,h4,h5,h6 {
 /*    Nav
 ======================*/
 .nav {
+
+}
+
+.nav.active {
+    display: block;
+    transition: all .2s linear;
 }
 
 .nav__list {
@@ -125,7 +131,79 @@ h1,h2,h3,h4,h5,h6 {
     color: #58c93a;
 }
 
+.nav__gumb {
+    position: relative;
+    width: 40px;
+    height: 5px;
 
+    background-color: #fff;
+
+    font-size: 0;
+
+    cursor: pointer;
+}
+
+.nav__gumb:hover {
+    cursor: pointer;
+}
+
+.nav__gumb::after,
+.nav__gumb::before {
+    content: "";
+    display: block;
+
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+
+    transition: transform .2s ease-in, top .2s linear .2s;
+}
+
+.nav__gumb::after {
+    left: 0;
+    top: 10px;
+}
+
+
+.nav__gumb::before {
+    left: 0;
+    bottom: 10px;
+}
+.nav__gumb-wrap {
+    background-color: transparent;
+    margin-right: 30px;
+
+    cursor: pointer;
+
+    width: 40px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__gumb.nav__gumb--active {
+    background-color: transparent;
+}
+
+.nav__gumb.nav__gumb--active::before {
+    transform: rotate(45deg);
+
+    top: 0;
+
+    transition: top .2s linear,
+        transform .2s ease-in .2s;
+}
+
+.nav__gumb.nav__gumb--active::after {
+    transform: rotate(-45deg);
+
+    top: 0;
+
+    transition: top .2s linear,
+        transform .2s ease-in .2s;
+}
 /*    Main
 ======================*/
 .main {
@@ -343,8 +421,36 @@ article img {
 }
 
 @media(max-width: 768px) {
+    .header__content {
+        position: relative;
+    }
     .nav {
         display: none;
+        position: absolute;
+        right: 0;
+        bottom: -170px;
+        width: 30%;
+    }
+    .nav__list {
+        flex-direction: column;
+        background-color: #ccc;
+        width: 100%;
+    }
+
+    .nav__item {
+        display: inline;
+        text-align: center;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+    .nav__link {
+        display: inline;
+        border: 0;
+        padding: 0;
+
+    }
+    .nav__item:nth-child(4) .nav__link{
+        border: 0;
     }
 
     .aside {
@@ -372,7 +478,11 @@ article img {
 
 }
 
-
+@media(min-width: 768px) {
+    .nav__gumb-wrap {
+        display: none;
+    }
+}
 
 
 
