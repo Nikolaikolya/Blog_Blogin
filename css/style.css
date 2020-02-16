@@ -80,6 +80,10 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
 }
 
+.logo--header {
+    color: #292929;
+}
+
 .logo__item {
     color: #58c93a;
 }
@@ -231,17 +235,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*    Navigation
 ======================*/
 .navigation {
@@ -250,6 +243,7 @@ h1,h2,h3,h4,h5,h6 {
 
     border: 1px solid #e1e0e0;
     border-top: 0;
+    border-bottom: 0;
 }
 
 .navigation__item {
@@ -277,5 +271,43 @@ h1,h2,h3,h4,h5,h6 {
     font-style: normal;
     margin-left: 10px;
 }
+
+
+/*    Footer
+======================*/
+.footer {
+    border-top: 1px solid #e1e0e0;
+    background-color: #f8f8f8;
+
+    text-align: center;
+}
+
+.footer__logo {
+    width: 100%;
+    margin: 75px 0 25px 0;
+}
+
+.footer__text {
+    color: #a6a6a6;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 150px;
+}
+
+.footer__text--gray {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
